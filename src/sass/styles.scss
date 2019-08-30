@@ -1,0 +1,115 @@
+@import './variables';
+@import './mixins';
+@import "../../node_modules/bootstrap/scss/bootstrap";
+//@import "functions";
+@import "variables";
+@import "mixins";
+//@import "root";
+//@import "reboot";
+//@import "type";
+//@import "images";
+//@import "code";
+//@import "grid";
+//@import "tables";
+// @import "forms";
+// @import "buttons";
+// @import "transitions";
+// @import "dropdown";
+// @import "button-group";
+// @import "input-group";
+// @import "custom-forms";
+// @import "nav";
+// @import "navbar";
+// @import "card";
+// @import "breadcrumb";
+// @import "pagination";
+// @import "badge";
+// @import "jumbotron";
+// @import "alert";
+// @import "media";
+// @import "list-group";
+// @import "close";
+// @import "modal";
+// @import "tooltip";
+// @import "popover";
+// @import "carousel";
+// @import "utilities";
+// @import "print";
+@import '~ngx-toastr/toastr.css';
+@import url('https://js.arcgis.com/4.10/esri/css/main.css');
+
+
+:host {
+	display: block ;
+	font-size: 18px ;
+}
+
+a {
+	color: red ;
+	cursor: pointer ;
+	text-decoration: underline ;
+	user-select: none ;
+		-moz-user-select: none ;
+		-webkit-user-select: none ;
+}
+
+.scroll-progress {
+	left: 0px ;
+	height: 7px ;
+	right: 0px ;
+	top: 0px ;
+	z-index: 2 ;
+
+	&__indicator {
+		background-color: orangered ;
+		bottom: 0px ;
+		left: 0px ;
+		position: absolute ;
+		top: 0px ;
+		transition: 100ms ease width ;
+	}
+
+	&--fixed {
+		position: fixed ;
+	}
+
+	&--absolute {
+		position: absolute ;
+	}
+}
+
+.inner {
+	position: relative ;
+	width: 50% ;
+
+	&__content {
+		//border: 1px solid #f3f1f1 ;
+		height: 750px ;
+		overflow: auto ;
+		padding: 10px 40px 10px 40px ;
+	}
+}
+
+#mapDiv {
+    // height: 1000px;
+    // height: 400px;
+    padding: 0;
+    margin: 0;
+    height: 85%;
+    //width: 100%;
+}
+
+.highlight
+{
+    background-color: orangered;
+}
+
+.borderBlack
+{
+	border: solid 1px black;
+}
+
+.pointer
+{
+	cursor: pointer;
+}

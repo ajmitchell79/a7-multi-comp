@@ -1,0 +1,14 @@
+<div class="container-fluid" style="height:100%">
+    <div class="row">
+        <div class="col">
+            <app-nav (userName)="userName"></app-nav>
+        </div>
+    </div>
+    <div class="row mt-5" style="height:100%">
+        <div class="col" style="padding-left:0px;padding-right:0px">
+
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+<div toastContainer></div>
