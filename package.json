@@ -1,12 +1,11 @@
 {
-    "name": "a7-boilerplate",
+    "name": "a7-multi-comp",
     "version": "0.0.0",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build",
         "build-dev": "ng build --base-href / -c=dev",
-        "build-uat2": "ng build --base-href / -c=uat2",
         "build-staging": "ng build --base-href / -c=staging",
         "build-production": "ng build --base-href / -c=production",
         "test": "ng test",

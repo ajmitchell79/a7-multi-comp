@@ -5,8 +5,6 @@ import { AuthGuard } from '../shared/guards/auth.guard';
 
 import { ErrorComponent } from '../shared/error/error.component';
 import { HomeComponent } from '../home/home.component';
-// import { MenuitemComponent } from '../home/menuitem/menuitem.component';
-// import { ContentitemComponent } from '../home/contentitem/contentitem.component';
 
 const routes: Routes = [{
   path: '', redirectTo: 'home', pathMatch: 'full'
@@ -18,13 +16,11 @@ const routes: Routes = [{
     redirectPath: 'home'
   }
 },
-// {
-//   path: 'design1', component: Design1Component, canActivate: [AuthGuard],
-//   data: {
-//     page: 'design1',
-//     redirectPath: 'design1'
-//   }
-// },
+{
+  //lazy load...
+  path: 'testmodule', 
+ loadChildren: '../test/test.module#TestModule'
+},
 {
   path: 'error', component: ErrorComponent
 },

@@ -9,7 +9,7 @@ import {MenuItem} from '../models/menuItem';
 export class HomeComponent implements OnInit {
 
   public menuItems: MenuItem[];
-  private selectedMenuItem : MenuItem;
+  selectedMenuItem : MenuItem;
 
   constructor() { }
 
