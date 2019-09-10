@@ -16,6 +16,8 @@ import { ChartModule } from 'angular-highcharts';
 
 import { ToastrModule } from 'ngx-toastr';
 
+import {SharedModule} from './shared/shared.module';
+
 import {
   MatNativeDateModule, MatFormFieldModule, MatInputModule, MatCheckboxModule, MatProgressBarModule, MatBottomSheetModule,
   MatButtonModule,
@@ -57,6 +59,7 @@ import { ContentitemComponent } from './home/contentitem/contentitem.component';
     MatDialogModule,
     MatSortModule,
     ChartModule,
+    SharedModule,
     ToastrModule.forRoot()
   ],
   providers: [
