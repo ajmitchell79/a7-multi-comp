@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AuthGuard } from '../shared/guards/auth.guard';
 
 import { ErrorComponent } from '../shared/error/error.component';
 import { HomeComponent } from '../home/home.component';
+import { GridComponent } from '../grid/grid.component';
 
 const routes: Routes = [{
   path: '', redirectTo: 'home', pathMatch: 'full'
@@ -14,6 +15,13 @@ const routes: Routes = [{
   data: {
     page: 'home',
     redirectPath: 'home'
+  }
+},
+{
+  path: 'grid', component: GridComponent, canActivate: [AuthGuard],
+  data: {
+    page: 'grid',
+    redirectPath: 'grid'
   }
 },
 {
@@ -41,5 +49,5 @@ const routes: Routes = [{
 export class AppRoutingModule { }
 
 
-export const routingComponents = [HomeComponent, ErrorComponent];
+export const routingComponents = [HomeComponent,GridComponent, ErrorComponent];
 
