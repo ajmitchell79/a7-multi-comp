@@ -19,7 +19,7 @@ const routes: Routes = [{
 {
   //lazy load...
   path: 'testmodule', 
- loadChildren: '../test/test.module#TestModule'
+ loadChildren: () => import('../test/test.module').then(m => m.TestModule)
 },
 {
   path: 'error', component: ErrorComponent

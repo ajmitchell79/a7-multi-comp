@@ -13,7 +13,7 @@ export class AppComponent {
   environment: string = environment.envName;
   userName: string 
 
-  @ViewChild(ToastContainerDirective) toastContainer: ToastContainerDirective;
+  @ViewChild(ToastContainerDirective, { static: false }) toastContainer: ToastContainerDirective;
 
   constructor(public configService: ConfigService, private toastrService: ToastrService)
   {
