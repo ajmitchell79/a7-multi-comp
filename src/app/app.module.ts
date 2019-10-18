@@ -18,16 +18,19 @@ import { ToastrModule } from 'ngx-toastr';
 
 import {SharedModule} from './shared/shared.module';
 
-import {
-  MatNativeDateModule, MatFormFieldModule, MatInputModule, MatCheckboxModule, MatProgressBarModule, MatBottomSheetModule,
-  MatButtonModule,
-  MatButtonToggleModule,
-  MatTableModule,
-  MatPaginatorModule, MAT_DATE_LOCALE,
-  MatDialogModule,
-  MatSortModule,
-  MatProgressSpinnerModule
-} from '@angular/material';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { MatButtonModule } from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSortModule } from '@angular/material/sort';
+import { MatTableModule } from '@angular/material/table';
 
 import { AuthenticationService } from './services/authentication.service';
 import { ConfigService } from './services/config.service';
@@ -39,6 +42,7 @@ import { ContentitemComponent } from './home/contentitem/contentitem.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +51,7 @@ import { ContentitemComponent } from './home/contentitem/contentitem.component';
     ChartComponent,
     MenuitemComponent,
     ContentitemComponent
+    
   ],
   imports: [
     BrowserModule,

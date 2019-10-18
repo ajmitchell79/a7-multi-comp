@@ -6,6 +6,7 @@ import { AuthGuard } from '../shared/guards/auth.guard';
 import { ErrorComponent } from '../shared/error/error.component';
 import { HomeComponent } from '../home/home.component';
 import { GridComponent } from '../grid/grid.component';
+import { BladeComponent } from '../blade/blade.component';
 
 const routes: Routes = [{
   path: '', redirectTo: 'home', pathMatch: 'full'
@@ -15,6 +16,13 @@ const routes: Routes = [{
   data: {
     page: 'home',
     redirectPath: 'home'
+  }
+},
+{
+  path: 'blade', component: BladeComponent, canActivate: [AuthGuard],
+  data: {
+    page: 'blade',
+    redirectPath: 'blade'
   }
 },
 {
@@ -49,5 +57,5 @@ const routes: Routes = [{
 export class AppRoutingModule { }
 
 
-export const routingComponents = [HomeComponent,GridComponent, ErrorComponent];
+export const routingComponents = [HomeComponent,GridComponent, ErrorComponent,BladeComponent];
 

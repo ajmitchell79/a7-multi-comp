@@ -27,7 +27,8 @@ export class GlobalErrorHandler implements ErrorHandler {
     const router = this.injector.get(Router);
     
     const message = error.message ? error.message : error.toString();
-    const url = location._platformLocation.location.href;
+    //const url = location._platformLocation.location.href;
+    const url = "my url";
 
     this.toastErrorConfig = Object.assign({}, toastrService.toastrConfig);
     this.toastErrorConfig.timeOut = 0;
