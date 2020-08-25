@@ -32,7 +32,7 @@
     "core-js": "^2.6.9",
     "esri-loader": "^2.10.0",
     "font-awesome": "^4.7.0",
-    "highcharts": "^7.2.0",
+    "highcharts": "^7.2.2",
     "karma-junit-reporter": "^1.2.0",
     "ng-http-loader": "^6.0.1",
     "ngx-popper": "^4.2.0",
